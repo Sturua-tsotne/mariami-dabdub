@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-origin: padding-box;
+  cursor: none;
+}
+/* cursor  */
+body {
+  position: fixed;
+  cursor: none !important;
+  cursor: none;
+  background-color: rgb(137, 192, 194);
+}
+.cursor {
+  background-repeat: no-repeat, repeat;
+  background-image: url(./cursorimg.svg);
+  cursor: none;
+  z-index: 99;
+  height: 80px;
+  width: 80px;
+  border-radius: 30%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+  color: rgb(149, 148, 150);
+  position: absolute;
+}
+.backgraund {
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+}
+.backgraund::before {
+  content: "";
+  display: block;
+}
+.backg {
+  float: left;
+  padding: 118px;
+  margin-top: -50px;
+}
+.Cake {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  justify-content: center;
+}
+.Cake h1 {
+  cursor: pointer;
+  font-size: 12px;
+}
+.text {
+  display: none;
+  position: absolute;
+  color: brown;
+}
+.mystyle {
+  display: block !important;
+}
+.textm1 {
+  margin-left: 50%;
+}
+.textm2 {
+  margin-left: 10%;
+  margin-top: 20px;
+}
+.textm3 {
+  margin-top: 20%;
+  margin-left: 15%;
+}
